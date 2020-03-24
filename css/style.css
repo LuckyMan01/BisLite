@@ -54,14 +54,16 @@ li{
 .menu__list li+li {
     margin-left: 40px;
 }
+.menu__list li a:hover{
+    color:#2aacc8;
+}
 .header__drop-down .header__drop-down a{
     margin-left: 20px;
-    padding-right: 26px;
+    padding-right: 20px;
 }
 .drop-down a{
     border-top: 5px solid transparent;
     padding: 12px 28px 15px 11px;
-    margin-right:0 ;
 }
 .drop-down{
     position: relative;
@@ -70,7 +72,7 @@ li{
     content: '';
     position: absolute;
     background-image: url(../img/down-arrow.png);
-    top: 23px;
+    top: 20px;
     right: 10px;
     width: 7px;
     height: 5px;
@@ -94,7 +96,9 @@ li{
 }
 .drop-down:hover .drop-down__list{
     display: block;
-
+    position: absolute;
+    top: 40px;
+    left: -1px;
 }
 .drop-down__list :hover{
     display: block;
@@ -108,9 +112,10 @@ li{
     width: 170px;
     margin: 0 auto;
 }
-.header__drop-down.drop-down:hover > a{
+.header__drop-down.drop-down:hover > a 
+{
     border-top: 5px solid #2aacc8;
     color: #2aacc8;
     background-color: #fff;
-    transition: 0.3s;
+    transition: 0.2s;
 }
